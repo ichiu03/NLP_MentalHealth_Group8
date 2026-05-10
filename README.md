@@ -8,11 +8,6 @@ Binary classification of Reddit posts as depressed vs. non-depressed, using a sh
 
 ```
 NLP_MENTALHEALTH_GROUP8/
-├── reddit_depression_dataset.zip     # zip file for the dataset
-├── train.csv                         # 70% split, stratified
-├── val.csv                           # 15% split, stratified
-├── test.csv                          # 15% split, held-out final evaluation
-├── small_dev.csv                     # 2,000-sample subset for fast iteration
 ├── figures/                          # all saved plots at 300 dpi
 │   ├── class_balance_before_after_filter.png
 │   ├── class_balance_before_after_balancing.png
