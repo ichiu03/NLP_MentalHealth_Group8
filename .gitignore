@@ -1,2 +1,5 @@
 reddit_depression_dataset.csv.zip
 *.csv
+*.zip
+*.csv
+.DS_Store
