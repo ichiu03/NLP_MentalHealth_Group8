@@ -81,6 +81,8 @@ The raw dataset has a significant class imbalance (~4x more non-depressed posts)
 `bert-base-uncased` pretrained model fine-tuned for binary sequence classification
 using HuggingFace's `BertForSequenceClassification` with a linear classification
 head on top (2 output labels: depressed / non-depressed).
+- Model card: [bert-base-uncased](https://huggingface.co/bert-base-uncased)
+- Architecture: [BertForSequenceClassification](https://huggingface.co/docs/transformers/model_doc/bert#transformers.BertForSequenceClassification)
 
 **Non-standard libraries:**
 - [`transformers`](https://huggingface.co/docs/transformers) — BERT tokenizer and model
@@ -94,7 +96,6 @@ head on top (2 output labels: depressed / non-depressed).
 | Macro F1 | 0.90 |
 | Precision (Depressed) | 0.87 |
 | Recall (Depressed) | 0.92 |
----
 
 ## GPT Prompting (Teammate Section)
 
