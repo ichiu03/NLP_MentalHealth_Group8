@@ -76,22 +76,25 @@ The raw dataset has a significant class imbalance (~4x more non-depressed posts)
 
 ---
 
-## BERT Fine-Tuning (Teammate Section)
-
-*To be filled in by teammate.*
+## BERT Fine-Tuning
 
 **Model used:**
-*(e.g., `bert-base-uncased` from HuggingFace — link here)*
+`bert-base-uncased` pretrained model fine-tuned for binary sequence classification
+using HuggingFace's `BertForSequenceClassification` with a linear classification
+head on top (2 output labels: depressed / non-depressed).
 
 **Non-standard libraries:**
-*(e.g., `transformers`, `datasets` — links here)*
-
-**Any notebooks or tutorials referenced:**
-*(links here)*
+- [`transformers`](https://huggingface.co/docs/transformers) — BERT tokenizer and model
+- [`torch`](https://pytorch.org/) — model training, DataLoader, loss function
+- [`scikit-learn`](https://scikit-learn.org/) — evaluation metrics
 
 **Results on test set:**
-*(accuracy, macro F1)*
-
+| Metric | Score |
+|---|---|
+| Accuracy | 95.93% |
+| Macro F1 | 0.90 |
+| Precision (Depressed) | 0.87 |
+| Recall (Depressed) | 0.92 |
 ---
 
 ## GPT Prompting (Teammate Section)
