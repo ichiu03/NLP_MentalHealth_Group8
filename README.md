@@ -18,7 +18,6 @@ NLP_MENTALHEALTH_GROUP8/
 │   ├── confusion_matrix.png
 │   └── wordclouds.png
 ├── NLPDataSetup_Baseline.ipynb       # data prep + TF-IDF baseline 
-├── BERT_Mental_Health_Detection_NLP
 ├── BERT_Mental_Health_Detection_NLP-3         
 └── GPT.ipynb               
 ```
