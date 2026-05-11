@@ -1,6 +1,6 @@
 # Reddit Depression Detection — NLP Final Project
 
-Binary classification of Reddit posts as depressed vs. non-depressed, using a shared prepared dataset and three modeling approaches: a TF-IDF + Logistic Regression baseline, BERT fine-tuning, and GPT prompting.
+Binary classification of Reddit posts as depressed vs. non-depressed, using a shared prepared dataset and three modeling approaches: a TF-IDF + Logistic Regression baseline, BERT fine-tuning, and LoRA fine-tuning using open-source Mistral AI Model.
 
 ---
 
