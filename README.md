@@ -70,7 +70,7 @@ The raw dataset has a significant class imbalance (~4x more non-depressed posts)
 
 1. Combines `title` and `body` columns into a single `text` column
 2. Drops posts under 10 words (after combining)
-3. Balances classes using **histogram-matched downsampling** — non-depressed posts are sampled bin-by-bin to mirror the word-count distribution of depressed posts, then trimmed to a 1:1 ratio. This avoids introducing a confound where one class systematically has longer posts.
+3. Balances classes using **histogram-matched downsampling** — non-depressed posts are sampled bin-by-bin to mirror the word-count distribution of depressed posts, then trimmed to a more even ratio. This avoids introducing a confound where one class systematically has longer posts.
 4. Splits into train/val/test (70/15/15), stratified by label
 
 ---
@@ -105,6 +105,7 @@ head on top (2 output labels: depressed / non-depressed).
 `mistralai/Mistral-7B-v0.3` pretrained model fine-tuned for binary classification using Unsloth's `FastLanguageModel` with LoRA adapters (r=16) for parameter-efficient training (2 output labels: depressed / non-depressed).
 - Model card: [mistralai/Mistral-7B-v0.3](https://huggingface.co/mistralai/Mistral-7B-v0.3) via [unsloth/mistral-7b-v0.3-bnb-4bit](https://huggingface.co/unsloth/mistral-7b-v0.3-bnb-4bit)
 - LoRA framework: [Unsloth](https://unsloth.ai/docs)
+- Fine-tuned weights: [mattdks/mistral-7b-mental-health](https://huggingface.co/mattdks/mistral-7b-mental-health)
 
 **Non-standard libraries / APIs:**
 - [`unsloth`](https://unsloth.ai/docs) — LoRA fine tuning, Mistral 7B inference
