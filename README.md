@@ -97,6 +97,8 @@ head on top (2 output labels: depressed / non-depressed).
 | Precision (Depressed) | 0.87 |
 | Recall (Depressed) | 0.92 |
 
+---
+
 ## LoRA Fine-Tuning
 
 **Model used:**
